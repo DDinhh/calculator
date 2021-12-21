@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingDefaultResource">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:stretchColumns="*">
+        <TableRow>
+            <TextView
+                android:id="@+id/nhap"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="25dp"
+                android:layout_span="7"
+                android:textColor="#EDEFF3"
+                android:text="0"
+                android:gravity="right"/>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/ketqua"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="25dp"
+                android:layout_span="6"
+                android:textColor="#EDEFF3"
+                android:text="0"
+                android:padding="8dp"
+                android:gravity="right"/>
+            <Button
+                android:layout_span="1"
+                android:id="@+id/btnDele"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="3dp"
+                android:text="delete"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+
+
+
+
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_span="1"
+                android:id="@+id/btnBin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="BIN"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            <Button
+                android:layout_span="1"
+                android:id="@+id/btn_sin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="SIN"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            <Button
+                android:layout_span="1"
+                android:id="@+id/btn_sqrt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="√"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            <Button
+                android:layout_span="1"
+                android:id="@+id/mo_ngoac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="("
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/dong_ngoac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_span="1"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text=")"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <Button
+                android:layout_span="1"
+                android:id="@+id/clear_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="C"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            <Button
+                android:layout_span="1"
+                android:id="@+id/nhan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#252523"
+                android:padding="16dp"
+                android:text="*"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_span="1"
+                android:id="@+id/btnOct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="OCT"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            <Button
+                android:layout_span="1"
+                android:id="@+id/btn_cos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="COS"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            <Button
+                android:layout_span="1"
+                android:id="@+id/btn_luythua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="^"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/bay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_span="1"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="7"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <Button
+                android:layout_span="1"
+                android:id="@+id/tam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="8"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            <Button
+                android:layout_span="1"
+                android:id="@+id/chin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="9"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            <Button
+                android:layout_span="1"
+                android:id="@+id/chia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#252523"
+                android:padding="16dp"
+                android:text="/"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_span="1"
+                android:id="@+id/btnHex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="HEX"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            <Button
+                android:layout_span="1"
+                android:id="@+id/btn_tan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="TAN"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            <Button
+                android:layout_span="1"
+                android:id="@+id/btn_giaithua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="!"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            <Button
+                android:layout_span="1"
+                android:id="@+id/bon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="4"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            <Button
+                android:layout_span="1"
+                android:id="@+id/nam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            <Button
+                android:layout_span="1"
+                android:id="@+id/sau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="6"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            <Button
+                android:layout_span="1"
+                android:id="@+id/cong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#252523"
+                android:padding="16dp"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_span="1"
+                android:id="@+id/btnDec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="DEC"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            <Button
+                android:layout_span="1"
+                android:id="@+id/btn_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="LOG"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btn_percent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_span="1"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="%"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <Button
+                android:layout_span="1"
+                android:id="@+id/mot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            <Button
+                android:layout_span="1"
+                android:id="@+id/hai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            <Button
+                android:layout_span="1"
+                android:id="@+id/ba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            <Button
+                android:layout_span="1"
+                android:id="@+id/tru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#252523"
+                android:padding="16dp"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_span="1"
+                android:id="@+id/btn_e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="e"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            <Button
+                android:layout_span="1"
+                android:id="@+id/btn_nsqrt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="n√"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            <Button
+                android:layout_span="1"
+                android:id="@+id/btn_Int"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="INT"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/so0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_span="1"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <Button
+                android:layout_span="1"
+                android:id="@+id/so00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btnDot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_span="1"
+                android:backgroundTint="#5C5C57"
+                android:padding="16dp"
+                android:text="."
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <Button
+                android:layout_span="1"
+                android:id="@+id/bang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:backgroundTint="#252523"
+                android:padding="16dp"
+                android:text="="
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+
+        </TableRow>
+
+
+
+    </TableLayout>
+</ScrollView>
